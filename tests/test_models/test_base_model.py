@@ -9,7 +9,7 @@ import os
 
 
 class test_basemodel(unittest.TestCase):
-    """ """
+    """test base model """
 
     def __init__(self, *args, **kwargs):
         """ """
