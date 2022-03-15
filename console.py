@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """This is the console for AirBnB"""
+
+
 import cmd
 from models import storage
 from datetime import datetime
@@ -51,8 +53,6 @@ class HBNBCommand(cmd.Cmd):
                 try:
                     var = eval(attributes[1])
                     attributes[1] = var
-                except:
-                    pass
                 if type(attributes[1]) is not tuple:
                     setattr(obj, attributes[0], attributes[1])
             obj.save()
