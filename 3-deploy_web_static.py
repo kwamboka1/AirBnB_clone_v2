@@ -1,4 +1,6 @@
-ck(): Generates a .tgz archive from the
+#!/usr/bin/python3
+"""
+do_pack(): Generates a .tgz archive from the
 contents of the web_static folder
 do_deploy(): Distributes an archive to a web server
 deploy (): Creates and distributes an archive to a web server
@@ -11,7 +13,7 @@ from fabric.api import env
 import re
 
 
-env.hosts = ['34.74.243.116', '3.239.3.209']
+env.hosts = ['44.197.235.95', '3.226.122.46']
 
 
 def do_pack():
